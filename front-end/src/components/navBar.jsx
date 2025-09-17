@@ -9,13 +9,18 @@ const Navbar = () => {
   const [token, setToken] = useState(true);
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b gray-400">
-      <img src={logo} className="w-44 cursor-pointer" alt="Logo Image" />
+      <img
+        onClick={() => navigate("/")}
+        src={logo}
+        className="w-44 cursor-pointer"
+        alt="Logo Image"
+      />
       <ul className="hidden md:flex items-start gap-5 font-medium">
         <NavLink to="/">
           <li className="py-1">HOME</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
-        <NavLink to="/docters">
+        <NavLink to="/doctors">
           <li className="py-1">ALL DOCTORS</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
@@ -47,7 +52,12 @@ const Navbar = () => {
                 >
                   My Appointments
                 </p>
-                <p onClick={()=>setToken(false)} className="hover:text-black cursor-pointer">Logout</p>
+                <p
+                  onClick={() => setToken(false)}
+                  className="hover:text-black cursor-pointer"
+                >
+                  Logout
+                </p>
               </div>
             </div>
           </div>
