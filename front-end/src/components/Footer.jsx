@@ -9,10 +9,9 @@ const Footer = () => {
         <div>
           <img className="mb-5 w-40" src={assets.logo} alt="" />
           <p className="w-full md:w-2/3 text-gray-600 leading-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Prescripto is a modern platform for booking doctor appointments and
+            managing healthcare schedules. It simplifies medical consultations
+            and makes healthcare more accessible for patients and doctors.
           </p>
         </div>
         {/* -------- Center Section-------- */}
@@ -39,7 +38,7 @@ const Footer = () => {
         <div>
           <hr />
           <p className="py-5 text-sm text-center">
-            Copyright © 2024 GreatStack - All Right Reserved.
+            Copyright © 2025 GreatStack - All Right Reserved.
           </p>
         </div>
       </div>
